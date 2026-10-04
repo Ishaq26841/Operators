@@ -1,0 +1,34 @@
+field1= 120
+field2= 90 
+field3= 3
+field4= 9
+field5= 98
+
+total = field1 + field2 + field3 + field4 + field5
+average = total/5
+
+print("total harvest      :", total, "kg" )
+print("Average per field:     ",average, "kg"  )
+
+price_per_kg = 15
+earnings = total * price_per_kg
+
+bags = total // 25
+leftover = total % 25
+
+print("Full bags packed      :", bags)
+print("leftover grain      :", leftover, "kg")
+
+lastyear = 500
+print("Better Than Last Year? :", total > lastyear)
+print("Same As Last Year? :", total == lastyear)
+print("At Least as Good? :", total >= lastyear)
+
+total += 30
+print("After Bonus Crop :", total, "kg")
+
+total -= 15
+print("After Seeds Reserve :", total, "kg")
+
+bags = total//25
+print("Final Bags packed :", bags)
